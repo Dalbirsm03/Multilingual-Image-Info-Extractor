@@ -14,7 +14,7 @@ def get_gemini_response(input_prompt , image , input):
     return response.text
 
 #Streamlit Setup
-st.set_page_config(page_title = "Multilanguage Invoice Extractor")
+st.set_page_config(page_title = "Multilanguage Image Extractor")
 st.header("Gemini Apllixation")
 input = st.text_input("Input Prompt" , key = 'input')#Ask the question
 upload_file = st.file_uploader("Choose Image ..." , type= ['jpg' , 'png' , 'jpeg'])#To upload image
